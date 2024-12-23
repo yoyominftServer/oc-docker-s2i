@@ -2,5 +2,6 @@
 
 FROM registry.access.redhat.com/ubi7:latest
 
-CMD ["/bin/bash", "-c", "sleep infinity"]
-# CMD ["/bin/bash", "-c", "--", "while true; do sleep 30; done;"]
+# Changing parameters of Dockerfile to generate are new out put in OCP pod.
+# CMD ["/bin/bash", "-c", "sleep infinity"]
+CMD ["/bin/bash", "-c", "--", "while true; do sleep 30; done;"]
